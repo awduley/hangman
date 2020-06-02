@@ -10,6 +10,14 @@
   <title>Hangman</title>
 </head>
 <body>
+
+  <!-- Audio elements -->
+  <audio class="music" src="./assets/sounds/music.mp3"></audio>
+  <audio class="fail" src="./assets/sounds/fail.mp3"></audio>
+  <audio class="success" src="./assets/sounds/success.mp3"></audio>
+  <audio class="victory" src="./assets/sounds/victory.wav"></audio>
+  <audio class="defeat" src="./assets/sounds/defeat.wav"></audio>
+  <!-- End audio elements -->
   <!-- Overlays -->
   <div class="overlay visible">
     <h1>Welcome to Hangman!</h1>
@@ -29,6 +37,31 @@
   <main class="main-container">
 
     <!-- Start title area -->
+    
+    <div class="slider-area__background">
+      <p>Background</p>
+      <div class="slider-area__background-options">
+        <small class="slider-area__background-options--default">Default</small>
+        <small class="slider-area__background-options--mint">Mint</small>
+        <small class="slider-area__background-options--ocean">Ocean</small>
+        <small class="slider-area__background-options--royal">Royal</small>
+      </div>
+      <div class="slider__background">
+        <div class="peg__background peg2__background first"></div>
+      </div>
+    </div>
+
+    <div class="slider-area__sound">
+      <p>Music</p>
+      <div class="slider-area__sound-options">
+        <small class="slider-area__sound-options--off">Off</small>
+        <small class="slider-area__sound-options--on">On</small>
+      </div>
+      <div class="slider__sound">
+        <div class="peg__sound peg1__sound left"></div>
+      </div>
+    </div>
+
     <h1 class="main-title">
       <span class="letter">
         H
@@ -56,7 +89,8 @@
 
     <!-- Start quote container-->
     <section class="quote-container">
-      
+      <p class="quote"></p>
+      <p class="author"></p>
     </section>
     <!-- End quote container-->
 

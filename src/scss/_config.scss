@@ -61,11 +61,6 @@ $rgba-complement-4: rgba(  0, 88,  0,1);
   transition: all 400ms ease-in-out;
 }
 
-// Mixin animations
-@mixin overlay-expand {
-  
-} 
-
 // Mixin media-queries
 @mixin xs {
   @media(max-width: 576px) {

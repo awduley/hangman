@@ -1,24 +1,178 @@
 // Cell phones portrait
 @include xs {
-
+  .key {
+  }
 }
 
 // Cell phones landscape
 @include sm {
+  .main-title span {
+    font-size: 2.2rem;
+  }
 
+  .quote-container {
+    width: 500px;
+  }
+
+  .key {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.3rem;
+    margin: 2px;
+  }
 }
 
 // Tablets and small laptops
 @include md {
+  .quote-container {
+    width: 600px;
+  }
 
+  .key {
+    width: 2.4rem;
+    height: 2.4rem;
+    font-size: 1.4rem;
+    margin: 2px;
+  }
 }
 
 // Computers and small televisions
 @include lg {
+  .main-title span {
+    font-size: 2.6rem;
+  }
 
+  .main-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+    "a a"
+    "b c"
+    "d d"
+    "e e";
+  }
+
+  .main-title {
+    grid-area: a;
+  }
+
+  .quote-container {
+    grid-area: b;
+    width: 500px;
+    margin: 2rem 0 2rem 3rem;
+    justify-self: center;
+  }
+
+  .gallows-container {
+    grid-area: c;
+    width: 400px;
+    padding: 1rem 0;
+
+    img {
+      transform: scale(1.3);
+      display: block;
+      margin: 2rem auto;
+    }
+  }
+
+  .stick {
+    width: 6px;
+  }
+  
+  .head {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0);
+    border: 6px solid #000;
+    top: 14%;
+    right: 24%;
+    position: absolute;
+  
+    &::before {
+      content: '';
+      height: 21px;
+      background: rgb(153, 113, 80);
+      top: -84%;
+      right: 39%;
+      position: absolute;
+      width: 6px;
+      z-index: -1;
+    }
+  
+    &::after {
+      content: '';
+      height: px;
+      width: 12px;
+      background: rgb(153, 113, 60); 
+      bottom: - 35%;
+      right: 28%;
+      position: absolute;
+    }
+  }
+  
+  .body {
+    height: 62px;
+    top: 26.4%;
+    right: 28.4%;
+  }
+  
+  .arm {
+    height: 65px;
+  }
+  
+  .arm-left {
+    top: 26.5%;
+    right: 32.5%;
+    transform: rotate(30deg);
+  }
+  
+  .arm-right {
+    top: 26.5%;
+    right: 24.3%;
+    transform: rotate(-30deg);
+  }
+  
+  .leg {
+    height: 91px;
+  }
+  
+  .leg-left {
+    top: 41.5%;
+    right: 30.75%;
+    transform: rotate(12deg);
+  }
+  
+  .leg-right {
+    top: 41.5%;
+    right: 26%;
+    transform: rotate(-12deg);
+  }
+
+  .key-container {
+    grid-area: d;
+    width: 100%;
+  }
+
+  .footer {
+    grid-area: e;
+  }
 }
 
 // Large screens and televisions
 @include xl {
-  
+  .quote-container {
+    width: 650px;
+    margin-left: 6rem;
+  }
+
+  .key {
+    width: 2.6rem;
+    height: 2.6rem;
+    font-size: 1.6rem;
+    margin: 3px;
+  }
 }

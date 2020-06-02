@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="/main.d8ebb8d6.js" defer=""></script>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Piedra&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="/main.77bb5cfd.css">
+  <title>Hangman</title>
+<script src="/main.77bb5cfd.js"></script></head>
+<body>
+
+  <!-- Audio elements -->
+  <audio class="music" src="/music.fcce0a6b.mp3"></audio>
+  <audio class="fail" src="/fail.27d52c7b.mp3"></audio>
+  <audio class="success" src="/success.2ec1d7d4.mp3"></audio>
+  <audio class="victory" src="/victory.bfdb84a1.wav"></audio>
+  <audio class="defeat" src="/defeat.c816b0b2.wav"></audio>
+  <!-- End audio elements -->
+  <!-- Overlays -->
+  <div class="overlay visible">
+    <h1>Welcome to Hangman!</h1>
+    <p>Click to start game</p>
+  </div>
+  <div class="overlay victory">
+    <h1>You Won!!!</h1>
+    <p>Click to play again</p>
+  </div>
+  <div class="overlay defeat">
+    <h1>You Lost...</h1>
+    <p>Click to play again</p>
+  </div>
+  <!-- End overlays-->
+
+  <!-- Start main container -->
+  <main class="main-container">
+
+    <!-- Start title area -->
+    
+    <div class="slider-area__background">
+      <p>Background</p>
+      <div class="slider-area__background-options">
+        <small class="slider-area__background-options--default">Default</small>
+        <small class="slider-area__background-options--mint">Mint</small>
+        <small class="slider-area__background-options--ocean">Ocean</small>
+        <small class="slider-area__background-options--royal">Royal</small>
+      </div>
+      <div class="slider__background">
+        <div class="peg__background peg2__background first"></div>
+      </div>
+    </div>
+
+    <div class="slider-area__sound">
+      <p>Music</p>
+      <div class="slider-area__sound-options">
+        <small class="slider-area__sound-options--off">Off</small>
+        <small class="slider-area__sound-options--on">On</small>
+      </div>
+      <div class="slider__sound">
+        <div class="peg__sound peg1__sound left"></div>
+      </div>
+    </div>
+
+    <h1 class="main-title">
+      <span class="letter">
+        H
+      </span>
+      <span class="letter">
+        A
+      </span>
+      <span class="letter">
+        N
+      </span>
+      <span class="letter">
+        G
+      </span>
+      <span class="letter">
+        M
+      </span>
+      <span class="letter">
+        A
+      </span>
+      <span class="letter">
+        N
+      </span>
+    </h1>
+    <!-- End title area -->
+
+    <!-- Start quote container-->
+    <section class="quote-container">
+      <p class="quote"></p>
+      <p class="author"></p>
+    </section>
+    <!-- End quote container-->
+
+    <!-- Start gallows area -->
+    <section class="gallows-container">
+      <img src="/gallows.feedc578.png" alt="Gallows" class="gallows">
+      <div class="stick head"></div>
+      <div class="stick body"></div>
+      <div class="stick arm arm-left"></div>
+      <div class="stick arm arm-right"></div>
+      <div class="stick leg leg-left"></div>
+      <div class="stick leg leg-right"></div>
+    </section>
+    <!-- End gallows area -->
+
+    <!-- Start key area -->
+    <section class="key-container">
+      <div class="key-row key-row-top">
+        <div class="key">Q</div>
+        <div class="key">W</div>
+        <div class="key">E</div>
+        <div class="key">R</div>
+        <div class="key">T</div>
+        <div class="key">Y</div>
+        <div class="key">U</div>
+        <div class="key">I</div>
+        <div class="key">O</div>
+        <div class="key">P</div>
+      </div>
+      <div class="key-row key-row-bottom">
+        <div class="key">A</div>
+        <div class="key">S</div>
+        <div class="key">D</div>
+        <div class="key">F</div>
+        <div class="key">G</div>
+        <div class="key">H</div>
+        <div class="key">J</div>
+        <div class="key">K</div>
+        <div class="key">L</div>
+      </div>
+      <div class="key-row key-row-bottom">
+        <div class="key">Z</div>
+        <div class="key">X</div>
+        <div class="key">C</div>
+        <div class="key">V</div>
+        <div class="key">B</div>
+        <div class="key">N</div>
+        <div class="key">M</div>
+      </div>
+    </section>
+    <!-- End key area -->
+
+    <!-- Start footer area -->
+    <footer class="footer">
+      <p class="footer-credit">Crooked Fall Studios | &copy; <span></span> All rights reserved</p>
+    </footer>
+    <!-- End footer area -->
+
+  </main>
+  <!-- End main container -->
+</body>
+</html>
